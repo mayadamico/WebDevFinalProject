@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-contact">
+    <ul class="nav a">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://www.psychologytoday.com/us/therapists/michelle-d-amico-saugus-ma/884336">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<div class="return" style="text-align: center; margin-top: 50px; margin-bottom: -50px;">
+    <a class="return-button" a href="index.html" style="">Michelle D'Amico, LICSW</a>
+</div>
+    <div class="contactbody">
+        <h1>Let's get in touch</h1>
+        <p>If you have any questions or would like to schedule an appointment, please fill out the form below:</p>
+        <form onsubmit="handleFormSubmit(event)" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <div style="text-align: center;">
+                <button type="submit" class="submit-button">Send Message</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="return" style="text-align: center; margin-bottom: 50px;">
+        <a class="return-button" href="index.html" style="">Return to Homepage</a>
+    </div>
+</body>
+    <script>
+function handleFormSubmit(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    // Store data in localStorage
+    localStorage.setItem("formData", JSON.stringify({ name, email, subject, message }));
+
+    console.log("Form submitted:");
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Subject:", subject);
+    console.log("Message:", message);
+
+    document.querySelector(".contact-form").style.display = "none";
+
+    const successMessage = document.createElement("p");
+    successMessage.textContent = `Thank you for reaching out, ${name}! I'll get back to you as soon as possible.`;
+    successMessage.style.fontSize = "1.2em";
+    successMessage.style.color = "#0063cd";
+
+    document.querySelector(".contactbody").appendChild(successMessage);
+}
+</script>
+
+
+</html>

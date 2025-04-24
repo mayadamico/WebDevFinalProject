@@ -1,0 +1,356 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap");
+
+/* Global Styles */
+:root {
+  --primary-color: #003567;
+  --secondary-color: #06e3d8;
+  --background-color: #eaf6fb;
+  --text-color: #333;
+  --font-family: "Onest", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  font-family: var(--font-family);
+}
+
+/* Header Section */
+.headerbg {
+  background: linear-gradient(180deg, var(--primary-color) 0%, #117fab 100%);
+  padding: 80px 10%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.headerbody {
+  padding: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 5em;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  text-align: justify;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 1%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar-contact ul li a {
+  color: var(--primary-color);
+}
+
+.language-switcher button {
+  background: none;
+  color: #ffffff;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-right: 20px;
+}
+
+.language-switcher button:hover {
+  color: var(--secondary-color);
+}
+
+.navbar .language-switcher {
+  margin-left: auto;
+}
+
+/* Cards */
+.card-center, .card-left, .card-right {
+  font-size: 1.3em;
+  text-align: justify;
+  line-height: 1.2;
+  margin-top: 50px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 80px 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.card-center {
+  margin: 2% 20% 0% 20%;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 10%;
+  direction: ltr;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 80px 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+
+.column h3 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-size: 1em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* Specialties Section */
+.specialties ul li {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.specialties ul li:first-child, 
+.specialties ul li:last-child {
+  border-bottom: none;
+}
+
+.specialties ul li:hover {
+  color: var(--secondary-color);
+  cursor: default;
+}
+
+/* Buttons */
+.contact-button {
+  display: none; /* Hidden on larger screens */
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-button:hover {
+  background-color: #23aee4;
+}
+
+.contact-button:active {
+  background-color: #0e77a1;
+}
+
+/* Contact Form */
+.contactbody {
+  padding: 50px 10%;
+  margin-top: 100px;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.contactbody h1 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.contactbody p {
+  font-size: 1.2em;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1em;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: var(--font-family);
+}
+
+.contact-form .submit-button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-family: var(--font-family);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.return-button {
+  background: none;
+  color: var(--primary-color);
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none !important;
+  display: none; /* Hidden on larger screens */
+}
+
+/* Responsive to smaller screens: */
+@media screen and (max-width: 1000px) {
+  nav ul {
+    display: none;
+  }
+
+  .navbar .language-switcher {
+    margin: 0 auto;
+  }
+
+  .headerbg, .headerbody {
+    padding: 40px 5%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3em;
+    padding-top: 40px;
+  }
+
+  .card-center {
+    margin: 10px 5%;
+    padding: 50px;
+    text-align: left;
+  }
+
+  .card-row {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px 5%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .column {
+    margin: 10px 0;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .specialties ul li {
+    text-align: left;
+    padding: 0 200px;
+    margin: 0 auto;
+  }
+
+  .contact-button {
+    display: inline-block;
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .specialties ul li {
+    padding: 0;
+  }
+
+  .contactbody {
+    margin-top: 0;
+  }
+
+  .return-button {
+    display: inline-block;
+    text-align: center;
+  }
+}

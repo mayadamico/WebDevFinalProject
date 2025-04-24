@@ -1,7 +1,7 @@
-# WebDevFinalProject
+# WebDevFinalProject - Project Overview
 Final Project for Intro to Web Dev @ UVM
 
-//PROJECT OVERVIEW - PRIVATE THERAPY PRACTICE WEBSITE //
+## Therapy Practice Wesite
 
 This is a website for my mother's therapy practice. I worked on this independently.
 
@@ -15,7 +15,6 @@ Both pages of the website use @media queries to adjust and modify the format to 
 
 3. Contact Form
 The data is stored locally, so it can't actually function for the purpose of a live website. But it does use the concepts learned over this course for the purpose of a demo.
-
 
 
 - Maya D'Amico
