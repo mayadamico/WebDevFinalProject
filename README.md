@@ -4,6 +4,7 @@ Final Project for Intro to Web Dev @ UVM
 ## Therapy Practice Wesite
 
 This is a website for my mother's therapy practice. I worked on this independently.
+
 Live preview: https://github.com/mayadamico/WebDevFinalProject
 
 **Features**
