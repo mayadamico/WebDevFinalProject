@@ -1,7 +1,7 @@
 # WebDevFinalProject - Project Overview
 Final Project for Intro to Web Dev @ UVM
 
-## Therapy Practice Wesite
+## Therapy Practice Website
 
 This is a website for my mother's therapy practice. I worked on this independently.
 
