@@ -1,0 +1,278 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap");
+
+/* Global Styles */
+:root {
+  --primary-color: #003567;
+  --secondary-color: #10c2ba;
+  --background-color: #eaf6fb;
+  --text-color: #333;
+  --font-family: "Onest", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  font-family: var(--font-family);
+}
+
+/* Header Section */
+.headerbg {
+  background: linear-gradient(180deg, var(--primary-color) 0%, #0e77a1 100%);
+  padding: 80px 10%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.headerbody {
+  padding: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 5em;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  text-align: justify;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+.language-switcher button {
+  background: none;
+  color: #ffffff;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0;
+}
+
+.language-switcher button:hover {
+  color: var(--secondary-color);
+}
+
+.navbar .language-switcher {
+  margin-left: auto;
+}
+
+/* Cards */
+.card-center, .card-left, .card-right {
+  font-size: 1.3em;
+  text-align: justify;
+  line-height: 1.2;
+  margin-top: 50px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 80px 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.card-center {
+  margin: 2% 20% 0% 20%;
+}
+
+/* Row of 3 Columns */
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 10%;
+  direction: ltr;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 80px 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+
+.column h3 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-size: 1em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* Specialties Section */
+.specialties ul li {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.specialties ul li:first-child, 
+.specialties ul li:last-child {
+  border-bottom: none;
+}
+
+.specialties ul li:hover {
+  color: var(--secondary-color);
+  cursor: default;
+}
+
+/* Buttons */
+.button-blue {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-blue:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.button-blue:active {
+  background-color: #0e77a1;
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1000px) {
+  .headerbg {
+    padding: 40px 5%;
+    text-align: center;
+  }
+
+  .headerbody {
+    padding: 30px 5%;
+  }
+
+  h1 {
+    font-size: 3em;
+    padding-top: 40px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .card-center {
+    margin: 10px 5%;
+    padding: 50px 50px;
+    text-align: left;
+  }
+
+  .card-row {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px 5%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .column {
+    margin: 10px 0;
+    width: 100%;
+    padding: 50px 50px;
+    text-align: center;
+  }
+  .specialties ul li {
+    text-align: left;
+    padding-left:200px;
+    padding-right:200px;
+    margin: 0 auto;
+  }
+  
+  nav ul {
+    display: none;
+  }
+
+  .navbar .language-switcher {
+    margin: 0 auto;
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .specialties ul li {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
